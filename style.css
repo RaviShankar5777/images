@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 200px;
+  background-color: black;
+}
+.images {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+  cursor: pointer;
+}
+
+.images img {
+  border-radius: 5px;
+  width: 200px;
+  height: auto;
+  box-shadow: 5px 5px 10px 5px rgba(255, 255, 255, 0.2);
+}
+.images img:hover {
+  width: 190px;
+}
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img,
+.image5 img,
+.image6 img,
+.image7 img,
+.image8 img,
+.image9 img,
+.image10 img {
+  width: 440px;
+  height: auto;
+  position: absolute;
+  top: 41px;
+  left: 550px;
+  display: none;
+}
+
+.line1,
+.line2 {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  box-shadow: 1px 1px 3px 3px rgba(0, 255, 255, 0.2);
+}
+
+.line1 {
+  transform: rotate(-45deg) translate(-13px, 10px);
+}
+.line2 {
+  transform: rotate(45deg) translate(8px, 10px);
+}
+
+.image1 .burger,
+.image2 .burger,
+.image3 .burger,
+.image4 .burger,
+.image5 .burger,
+.image6 .burger,
+.image7 .burger,
+.image8 .burger,
+.image9 .burger,
+.image10 .burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 45px;
+  right: 410px;
+  display: none;
+}
